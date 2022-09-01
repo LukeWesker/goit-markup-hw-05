@@ -579,3 +579,37 @@ ul {list-style: none;}
     gap: 30px;
 }
 
+/* animation */
+.portfolio-wrapper {
+    position: relative;
+    overflow: hidden;
+
+}
+.overlay-portfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--primary-white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 10px;
+    line-height: 1,2;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+
+}
+.text-overlay {
+    display: block;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    padding-top: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.portfolio-boks-link:hover .overlay-portfolio,
+.portfolio-boks-link:focus .overlay-portfolio {
+    transform: translateY(0%);
+}
