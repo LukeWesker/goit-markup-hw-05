@@ -133,6 +133,7 @@ color: var(--acent-color);
 .link-hover .link:focus 
 {
     color: var(--acent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -140,11 +141,13 @@ color: var(--acent-color);
 .site-address .link:focus
 {
     color: var(--acent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address:hover,
 .footer-address:focus {
     color: var(--acent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address a
@@ -185,6 +188,7 @@ ul {list-style: none;}
 .modal-button:hover,
 .modal-button:focus {
     background-color: var(--button-main-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .active-button {
     font-family: 'Roboto';
@@ -203,13 +207,16 @@ ul {list-style: none;}
     }
 .button-portfolio:hover ,
 .button-portfolio:focus {
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 3px 1px rgba(0, 0, 0, 0.01);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active-button:hover,
 .active-button:focus {
     background-color: var(--acent-color);
     color: var(--primary-white-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-nav {
     display: flex;
@@ -295,6 +302,7 @@ ul {list-style: none;}
 .social-list-item:hover,
 .social-list-item:focus {
     background-color: var(--acent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*-------------------------- icon ----------------------*/
 .social-list {
@@ -339,17 +347,21 @@ ul {list-style: none;}
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: var(--acent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
     fill: var(--primary-white-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-block-link:hover .clients-block-icon,
 .clients-block-link:focus .clients-block-icon {
     fill: var(--acent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-block-link:hover {
     border: 1px solid var(--acent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link {
     display: flex;
@@ -455,6 +467,7 @@ ul {list-style: none;}
 .portfolio-boks-link:hover ,
 .portfolio-boks-link:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*-------------------------------- Paragraph-------------------------------------- */
 .paragraph {
