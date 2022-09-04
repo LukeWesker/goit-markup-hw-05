@@ -10,6 +10,7 @@
     --button-main-color: #188CE8;
     --logo-main-color: black;
     --line-bg-color: #ECECEC;
+    --timing-animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 html {
     box-sizing: border-box;
@@ -133,7 +134,7 @@ color: var(--acent-color);
 .link-hover .link:focus 
 {
     color: var(--acent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms var(--timing-animation);
 }
 
 
@@ -141,13 +142,13 @@ color: var(--acent-color);
 .site-address .link:focus
 {
     color: var(--acent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms var(--timing-animation);
 }
 
 .footer-address:hover,
 .footer-address:focus {
     color: var(--acent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms var(--timing-animation);
 }
 
 .address a
@@ -188,7 +189,7 @@ ul {list-style: none;}
 .modal-button:hover,
 .modal-button:focus {
     background-color: var(--button-main-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms var(--timing-animation);
 }
 .active-button {
     font-family: 'Roboto';
@@ -209,14 +210,14 @@ ul {list-style: none;}
 .button-portfolio:focus {
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
     
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms var(--timing-animation);
 }
 
 .active-button:hover,
 .active-button:focus {
     background-color: var(--acent-color);
     color: var(--primary-white-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms var(--timing-animation);
 }
 .button-nav {
     display: flex;
@@ -297,12 +298,13 @@ ul {list-style: none;}
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: border-color 250ms var(--timing-animation);
 
 }
 .social-list-item:hover,
 .social-list-item:focus {
     background-color: var(--acent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms var(--timing-animation);
 }
 /*-------------------------- icon ----------------------*/
 .social-list {
@@ -347,21 +349,22 @@ ul {list-style: none;}
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: var(--acent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms var(--timing-animation);
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
     fill: var(--primary-white-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms var(--timing-animation);
 }
 .clients-block-link:hover .clients-block-icon,
 .clients-block-link:focus .clients-block-icon {
     fill: var(--acent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms var(--timing-animation);
 }
-.clients-block-link:hover {
-    border: 1px solid var(--acent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.clients-block:hover,
+.clients-block:focus {
+    border-color: var(--acent-color);
+    transition: 250ms var(--timing-animation);
 }
 .nav-link {
     display: flex;
